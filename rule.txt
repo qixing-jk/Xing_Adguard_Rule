@@ -1,0 +1,49 @@
+!--------------------------PCDN屏蔽------------------------------
+! douyu.com
+*.ourdvsss.com/live?msg=getpeer
+*api.galaxyclouds.cn/p2p
+*congyicn.com/FlashP2PMonitorNew/
+*congyicn.com/dist/yhp2p.min.js
+proxy-tel-s.alicdn.com/f/pcdn*
+sdkapi.douyucdn.cn/p2p*
+! huya.com
+*.va.huya.com
+*.p2p.huya.com
+statwup.huya.com
+
+
+!--------------------------浏览器插件类------------------------------
+! 解决 Monica 插件推广广告
+||google.com,bing.com,brave.com,duckduckgo.com,ecosia.org,kagi.com,qwant.com,searx.me,startpage.com,yahoo.co.jp,yandex.com#%#//scriptlet('remove-in-shadow-dom', 'div[class^="search-enhance-ads"]', '#monica-search-enhance')
+||google.com,bing.com,brave.com,duckduckgo.com,ecosia.org,kagi.com,qwant.com,searx.me,startpage.com,yahoo.co.jp,yandex.com#%#//scriptlet('remove-in-shadow-dom', 'div[class^="search-enhance-promotion"]', '#monica-search-enhance')
+! 解决 Glarity 插件推广广告
+||google.com,bing.com,brave.com,duckduckgo.com,ecosia.org,kagi.com,qwant.com,searx.me,startpage.com,yahoo.co.jp,yandex.com#%#window.onload = () => document.querySelector('#GlarityStretchableBox .glarity--notice-container')?.remove();
+||google.com,bing.com,brave.com,duckduckgo.com,ecosia.org,kagi.com,qwant.com,searx.me,startpage.com,yahoo.co.jp,yandex.com#%#document.addEventListener('DOMContentLoaded', () => { document.querySelector('#GlarityStretchableBox .glarity--notice-container')?.remove(); });
+
+
+!--------------------------各种网站------------------------------
+! 1024草榴社区 解决【去广告插件屏蔽, 请等待10秒, 或将其关闭即刻恢复浏览。】问题
+t66y.com$$script[tag-content="广告"]
+! xtoys右部广告
+xtoys.app###q-app div.ad-side
+! 避免因为通用匹配，而隐藏了body
+@@||xtoys.app^$generichide
+! 解除 readmore.openwrite.cn 脚本的限制
+readmore.openwrite.cn$third-party
+
+
+!--------------------------简单屏蔽规则------------------------------
+axu.cilimiaomiao.xyz###header_adv
+axu.cilimiaomiao.xyz###footer_adv
+yduanzi.com###qiafan-wrap
+moeli-desu.com##div > a["rel"="nofollow"]
+123pan.com###app > div > div.appdiv > div.webbody:first-child > div:last-child
+alhs.xyz###post_content > div[data-index]
+comicat.org###btm > div.clear.text_center:nth-child(4)
+miobt.com###btm > div.clear.text_center:nth-child(4)
+kisssub.org###btm > div.clear.text_center:nth-child(4)
+
+
+!--------------------------强制跳转------------------------------
+! 逍遥模拟器国际版跳转回国内版
+||microvirt.com/*?action=getcountrycode$third-party
