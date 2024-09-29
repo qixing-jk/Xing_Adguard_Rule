@@ -1,3 +1,7 @@
+! Title: Xing 广告过滤规则
+! Version: 20240929
+! Expires: 2 days
+! Homepage: https://github.com/qixing-jk/Xing_Adguard_Rule
 !--------------------------PCDN屏蔽------------------------------
 ! douyu.com
 *.ourdvsss.com/live?msg=getpeer
