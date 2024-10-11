@@ -34,7 +34,10 @@ xtoys.app###q-app div.ad-side
 @@||xtoys.app^$generichide
 ! 解除 readmore.openwrite.cn 脚本的限制
 readmore.openwrite.cn$third-party
-
+! 喜马拉雅网页版中央弹窗广告
+ximalaya.com##.download-content
+ximalaya.com##.xui-modal-wrap.zj_
+ximalaya.com##.xui-modal-mask.fade-entered.zj_
 
 !--------------------------简单屏蔽规则------------------------------
 axu.cilimiaomiao.xyz###header_adv
