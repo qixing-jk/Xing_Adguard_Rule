@@ -1,5 +1,5 @@
 ! Title: Xing 广告过滤规则
-! Version: 20240929
+! Version: 20241025
 ! Expires: 2 days
 ! Homepage: https://github.com/qixing-jk/Xing_Adguard_Rule
 !--------------------------PCDN屏蔽------------------------------
@@ -14,8 +14,6 @@ sdkapi.douyucdn.cn/p2p*
 *.va.huya.com
 *.p2p.huya.com
 statwup.huya.com
-
-
 !--------------------------浏览器插件类------------------------------
 ! 解决 Monica 插件推广广告
 google.com,bing.com,brave.com,duckduckgo.com,ecosia.org,kagi.com,qwant.com,searx.me,startpage.com,yahoo.co.jp,yandex.com#%#//scriptlet('remove-in-shadow-dom', 'div[class^="search-enhance-ads"]', '#monica-search-enhance')
@@ -23,8 +21,8 @@ google.com,bing.com,brave.com,duckduckgo.com,ecosia.org,kagi.com,qwant.com,searx
 ! 解决 Glarity 插件推广广告
 google.com,bing.com,brave.com,duckduckgo.com,ecosia.org,kagi.com,qwant.com,searx.me,startpage.com,yahoo.co.jp,yandex.com#%#window.onload = () => document.querySelector('#GlarityStretchableBox .glarity--notice-container')?.remove();
 google.com,bing.com,brave.com,duckduckgo.com,ecosia.org,kagi.com,qwant.com,searx.me,startpage.com,yahoo.co.jp,yandex.com#%#document.addEventListener('DOMContentLoaded', () => { document.querySelector('#GlarityStretchableBox .glarity--notice-container')?.remove(); });
-
-
+! 沉浸式翻译 数据收集
+||analytics.immersivetranslate.com^
 !--------------------------各种网站------------------------------
 ! 1024草榴社区 解决【去广告插件屏蔽, 请等待10秒, 或将其关闭即刻恢复浏览。】问题
 t66y.com$$script[tag-content="广告"]
@@ -38,7 +36,6 @@ readmore.openwrite.cn$third-party
 ximalaya.com##.download-content
 ximalaya.com##.xui-modal-wrap.zj_
 ximalaya.com##.xui-modal-mask.fade-entered.zj_
-
 !--------------------------简单屏蔽规则------------------------------
 axu.cilimiaomiao.xyz###header_adv
 axu.cilimiaomiao.xyz###footer_adv
@@ -49,8 +46,9 @@ alhs.xyz###post_content > div[data-index]
 comicat.org###btm > div.clear.text_center:nth-child(4)
 miobt.com###btm > div.clear.text_center:nth-child(4)
 kisssub.org###btm > div.clear.text_center:nth-child(4)
-
-
 !--------------------------强制跳转------------------------------
 ! 逍遥模拟器国际版跳转回国内版
 ||microvirt.com/*?action=getcountrycode$third-party
+!--------------------------规则误杀类------------------------------
+! 解除因为 xinggsf 的 */ad-$~stylesheet 规则导致的Reddit无法正常搜索问题
+@@||redditstatic.com^*/ad-$~stylesheet
