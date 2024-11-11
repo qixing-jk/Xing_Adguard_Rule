@@ -1,5 +1,5 @@
 ! Title: Xing 广告过滤规则
-! Version: 20241025
+! Version: 20241111
 ! Expires: 2 days
 ! Homepage: https://github.com/qixing-jk/Xing_Adguard_Rule
 !--------------------------PCDN屏蔽------------------------------
@@ -52,3 +52,5 @@ kisssub.org###btm > div.clear.text_center:nth-child(4)
 !--------------------------规则误杀类------------------------------
 ! 解除因为 xinggsf 的 */ad-$~stylesheet 规则导致的Reddit无法正常搜索问题
 @@||redditstatic.com^*/ad-$~stylesheet
+! 解除因为 xinggsf 的 *_960.$image 规则导致的google开发者文档图片无法正常加载问题
+@@||developer.chrome.com/static/$important,image
