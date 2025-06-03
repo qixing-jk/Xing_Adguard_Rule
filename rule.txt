@@ -36,6 +36,8 @@ readmore.openwrite.cn$third-party
 ximalaya.com##.download-content
 ximalaya.com##.xui-modal-wrap.zj_
 ximalaya.com##.xui-modal-mask.fade-entered.zj_
+! 老烤鸭雅思恼人的自我推广
+laokaoya.com##[id^="laoka-"]
 !--------------------------简单屏蔽规则------------------------------
 axu.cilimiaomiao.xyz###header_adv
 axu.cilimiaomiao.xyz###footer_adv
