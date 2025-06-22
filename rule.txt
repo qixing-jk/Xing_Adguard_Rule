@@ -2,6 +2,9 @@
 ! Version: 20241111
 ! Expires: 2 days
 ! Homepage: https://github.com/qixing-jk/Xing_Adguard_Rule
+!--------------------------通用屏蔽------------------------------
+! umami 数据统计
+ana.oxyry.com/api/ana
 !--------------------------PCDN屏蔽------------------------------
 ! douyu.com
 *.ourdvsss.com/live?msg=getpeer
