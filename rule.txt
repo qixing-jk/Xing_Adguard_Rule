@@ -1,5 +1,5 @@
 ! Title: Xing 广告过滤规则
-! Version: 20241111
+! Version: 20250920
 ! Expires: 2 days
 ! Homepage: https://github.com/qixing-jk/Xing_Adguard_Rule
 !--------------------------通用屏蔽------------------------------
